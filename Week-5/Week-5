@@ -1,1 +1,23 @@
+async function Task1(){
+    console.log("initialising task 1");
+    return new Promise(resolve =>{
+    setTimeout(()=>{
+        let gen = Task3();
+        console.log(gen.next());
+        resolve ('All Task completed');
+    },2000);
+});
+}
 
+async function Task2(){
+console.log("initialising task2");
+const result = await Task1();
+console.log(result);
+}
+
+function* Task3(){
+    yield ('initializing Task 3');
+    yield 2;
+}
+
+console.log(Task2());
