@@ -1,0 +1,13 @@
+"use strict"
+function person(Teacher,subject){
+    this.Teacher = Teacher;
+    this.subject = subject;
+   
+}
+
+person.prototype.teach = function(){
+    return this.Teacher+" is now teaching "+this.subject;
+}
+
+const him = new person("ram","telugu");
+console.log(him.teach())

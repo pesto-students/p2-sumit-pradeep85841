@@ -1,0 +1,20 @@
+let n = 5;
+let arr = [];
+let sum = 0;
+
+    let x = 0
+    while (sum < n){
+           // console.log(n);
+        if(x == 0 || x==1 ){
+        arr.push(x);
+        sum +=x;
+        x++;
+        }else if (x == 2 && sum+x<n){
+            arr.push(x);
+            sum += x
+            x = 0;
+            }else{
+                x=0;
+            }
+        }
+console.log(arr.sort());

@@ -1,0 +1,13 @@
+Matrix = [ [ 1, 2, 3 ],
+           [ 4, 5, 6 ],
+           [ 7, 8, 9 ] ];
+
+let row1 = Matrix[0];
+let row2 = Matrix[1];
+let row3 = Matrix[2].reverse();
+
+spiralMatrix = row1.concat(row3);
+spiralMatrix.splice(3,0,row2[2]);
+spiralMatrix.push(row2[0]);
+spiralMatrix.push(row2[1]);
+console.log(spiralMatrix);
