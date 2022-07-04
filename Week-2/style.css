@@ -1,0 +1,86 @@
+#box1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: width 2s, height 2s, transform 2s;
+
+}
+#box2 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transition: width 2s, height 2s, transform 2s;
+}
+#box3 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: width 2s, height 2s, transform 2s;
+}
+#box4 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: width 2s, height 2s, transform 2s;
+}
+.row1{
+    display: flex;
+}
+.row2{
+    display: flex;
+}
+#box1:hover{  
+     transform: rotateX(90deg);
+     animation: one 2s infinite;
+     animation-direction:alternate;
+}
+#box2:hover{
+    
+    transform: rotateX(90deg);
+    animation: one 2s infinite;
+    animation-direction: alternate;
+  }
+  #box3:hover{
+    
+    transform: rotateX(90deg);
+    animation: one 2s infinite;
+    animation-direction: alternate-reverse;
+  }
+  #box4:hover{
+    
+    transform: rotateX(90deg);
+    animation: one 2s infinite;
+    animation-direction: alternate-reverse;
+  }
+@keyframes box1 {
+0% {
+transform: rotateX(0);
+}
+100% {
+transform: rotateX(90deg);
+}
+}
+@keyframes box2 {
+0% {
+transform: rotateX(0);
+}
+100% {
+transform: rotateX(90deg);
+}
+}
+@keyframes box3 {
+0% {
+transform: rotateX(0);
+}
+100% {
+transform: rotateX(90deg);
+}
+}
+@keyframes box4 {
+0% {
+transform: rotateX(0);
+}
+100% {
+transform: rotateX(90deg);
+}
+}

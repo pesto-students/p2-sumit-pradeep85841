@@ -1,1 +1,11 @@
+A = [1,2,3,4,5,-10]
 
+let sum =0;
+
+for (let i in A){
+    if (0 < A[i]){
+       sum += A[i];
+    }
+}
+
+console.log(sum);
