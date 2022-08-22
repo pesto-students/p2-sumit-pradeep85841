@@ -1,0 +1,28 @@
+.container{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:floralwhite;
+}
+
+.inputcontainer h1{
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(59, 56, 56);
+
+}
+
+.inputcontainer span{
+  color: cadetblue;
+}
+
+.inputcontainer button{
+  color: cadetblue;
+}
+
+.resultcontainer p {
+  color: #fff;
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+}
