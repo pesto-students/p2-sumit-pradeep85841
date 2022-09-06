@@ -1,0 +1,11 @@
+let arr =  [1,1,2,3];
+
+const set = new Set(arr);
+
+const hasDuplicate = [...new Set(arr)];
+
+if(set.size !== arr.length){
+    console.log(false);
+}else{
+    console.log(true);
+}
